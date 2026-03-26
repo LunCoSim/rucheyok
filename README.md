@@ -1,0 +1,40 @@
+# 🧊 Rucheyok
+## The LORS-Compliant Lunar Micro-Rover
+
+### 🛰️ Overview
+**Rucheyok** (meaning "Little Stream" or "Brook") is a 2kg lunar micro-rover designed in full compliance with the **Lunar Open-source Rover Standard (LORS)** by [MoonDAO](https://github.com/Official-MoonDao/LORS). It serves as a reference implementation for low-cost, modular lunar exploration platforms.
+
+By adhering to the LORS ecosystem, Rucheyok ensures interoperability with standardized lunar landers, communication hubs, and power infrastructure, significantly lowering the barrier to entry for lunar missions.
+
+### 📐 Key Specifications
+| Parameter | Target Value | LORS Compliance Reference |
+|---|---|---|
+| **Form Factor** | 2U-equivalent | Standardized Mounting Interface |
+| **Total Mass** | 2.0 kg | REQ-MAS-003 (Class A / Micro) |
+
+
+### 🛠️ Architecture & Modeling
+Rucheyok is engineered using **SysML v2**, leveraging the formal architecture definitions provided by the LORS standard. The digital twin of the rover is defined by:
+
+- **Formal Requirements**: Adherence to `LORS_Requirements` and `LORS_BudgetRequirements`.
+- **Interface Standardization**: Utilization of `LORS_Interfaces` for internal and external connectivity.
+- **Model-Based Verification**: Using SysML v2 constraints to automate compliance checking for mass and power budgets.
+
+### 🧩 Compliance with LORS
+Rucheyok satisfies the following key LORS architectural pillars:
+1. **Structural Compatibility**: Designed for the standard 4-bolt micro-rover interface.
+2. **Thermal Resilience**: Integrated thermal protection system complying with `REQ-THM-001`.
+3. **Traceable Budgets**: All mission budgets are exported from the `LORS_AnalysisTemplate` in SysML v2.
+
+### 🚀 Getting Started
+To explore the rover design and models:
+1. **View Models**: Native SysML v2 models are located in the `model/` directory.
+2. **Compliance Reports**: Check the [compliance_log](docs/compliance.md) for automated budget verification results.
+3. **Reference Standard**: See the [Official LORS Documentation](https://github.com/Official-MoonDao/LORS).
+
+### ⚖️ License
+This project is licensed under the **Apache License 2.0**.
+See [LICENSE](LICENSE) for details.
+
+---
+*Developed under the Lunar Open-source Rover Standard (LORS) initiative by MoonDAO.*
